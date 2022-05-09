@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/323abdd8a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>.: Luana Ramos :.</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="Images/logo.png"
+          alt="Luana Ramos - Fullstack Developer"
+          width="100"
+        />
+      </div>
+      <div id="navbar_container">
+        <ul>
+          <li id="navbar">
+            <a href="https://github.com/LuanaRamos/" target="_blank">
+              <b> github </b>
+            </a>
+          </li>
+          <li id="navbar">
+            <a href="mailto:luanaramos1994@gmail.com"> <b> e-mail </b> </a>
+          </li>
+          <li id="navbar">
+            <a href="https://wa.me/+5584996783869" target="_blank">
+              <b> me liga </b>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Luana Ramos</h1>
+          <h5>
+            Bacharelanda de Tecnologia da Informação | Bolsista Hiring Coders
+          </h5>
+        </div>
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-caret-down"></i>
+        </div>
+        <div style="display: none;" id="about">
+          <p>
+            Apaixonada por tecnologia, cursando Bacharelado em Tecnologia da
+            Informação e bolsista Digital Commerce do Hiring Coders.
+          </p>
+        </div>
+        <div class="form">
+          <form action="">
+            <label for="email">Deixe seu contato!</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="seu melhor email aqui ;)"
+            />
+            <button type="submit">enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById("animation");
+        arrow.classList.toggle("rotate");
+        var display = document.getElementById("about");
+        display.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
